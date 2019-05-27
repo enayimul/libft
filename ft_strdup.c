@@ -6,11 +6,11 @@
 /*   By: enayimul <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/27 08:56:43 by enayimul          #+#    #+#             */
-/*   Updated: 2019/05/27 09:11:40 by enayimul         ###   ########.fr       */
+/*   Updated: 2019/05/27 17:26:22 by enayimul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libdt.h"
+#include "libft.h"
 
 char	*strdup(const char *s1)
 {
