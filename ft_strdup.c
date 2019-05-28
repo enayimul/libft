@@ -6,13 +6,13 @@
 /*   By: enayimul <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/27 08:56:43 by enayimul          #+#    #+#             */
-/*   Updated: 2019/05/27 17:26:22 by enayimul         ###   ########.fr       */
+/*   Updated: 2019/05/28 11:29:04 by enayimul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*strdup(const char *s1)
+char	*ft_strdup(const char *s1)
 {
 	char	*dest;
 
