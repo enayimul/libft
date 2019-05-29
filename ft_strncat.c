@@ -6,7 +6,7 @@
 /*   By: enayimul <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/23 13:11:13 by enayimul          #+#    #+#             */
-/*   Updated: 2019/05/23 13:52:31 by enayimul         ###   ########.fr       */
+/*   Updated: 2019/05/29 09:25:45 by enayimul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ char	*ft_strncat(char *restrict s1, const char *restrict s2, size_t n)
 	{
 		i++;
 	}
-	while ((s2[j]) && j < c)
+	while ((s2[j]) && j < n)
 	{
 		s1[i] = s2[i];
 		i++;
