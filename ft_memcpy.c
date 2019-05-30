@@ -6,7 +6,7 @@
 /*   By: enayimul <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/28 16:44:43 by enayimul          #+#    #+#             */
-/*   Updated: 2019/05/29 12:01:49 by enayimul         ###   ########.fr       */
+/*   Updated: 2019/05/30 14:11:53 by enayimul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,12 +28,12 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	return (dest);
 }
 
-int		main()
-{
-	char src[35] = "lebza is coming to school again";
-	char dest[18] = "hello world again";
+//int		main()
+//{
+//	char src[35] = "lebza is coming to school again";
+//	char dest[18] = "hello world again";
 
-	printf("%s", ft_memcpy(dest, src, 32));
-	return (0);
-}
+//	printf("%s", ft_memcpy(dest, src, 32));
+//	return (0);
+//}
 
