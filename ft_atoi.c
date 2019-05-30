@@ -6,13 +6,13 @@
 /*   By: enayimul <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/22 09:14:04 by enayimul          #+#    #+#             */
-/*   Updated: 2019/05/24 08:02:53 by enayimul         ###   ########.fr       */
+/*   Updated: 2019/05/28 13:04:37 by enayimul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_atoi(char *str)
+int		ft_atoi(const char *str)
 {
 	int sign;
 	int i;
