@@ -6,7 +6,7 @@
 /*   By: enayimul <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/27 09:19:23 by enayimul          #+#    #+#             */
-/*   Updated: 2019/05/29 16:41:59 by enayimul         ###   ########.fr       */
+/*   Updated: 2019/06/04 14:57:46 by enayimul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,13 +15,10 @@
 # include <string.h>
 # include <unistd.h>
 # include <stdlib.h>
+# include <stdio.h>
+# include <ctype.h>
 
-typedef struct		s_list
-{
-	void			*content;
-	size_t			content_size;
-	struct s_list	*next;
-}					t_list;
+
 void				*ft_memset(void *b, int c, size_t len);
 void				ft_bzero(void *s, size_t n);
 char				*ft_strpbrk(const char *str, const char *c);
@@ -86,10 +83,6 @@ int					ft_islower(int c);
 int					ft_isupper(int c);
 int					ft_tolower(int c);
 int					ft_toupper(int c);
-void				ft_lstdelone(t_list **alst, void (*del)(void*, size_t));
-void				ft_lstdel(t_list **alst, void (*del)(void*, size_t));
-void				ft_lstiter(t_list *lst, void (*f)(t_list *elem));
-double				ft_power(double nb, double power);
 char				*ft_strrev(char *str);
 int					*ft_range(int start, int end);
 int					*ft_rrange(int start, int end);
