@@ -6,34 +6,27 @@
 /*   By: enayimul <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/28 16:44:43 by enayimul          #+#    #+#             */
-/*   Updated: 2019/05/30 14:11:53 by enayimul         ###   ########.fr       */
+/*   Updated: 2019/06/06 09:40:36 by enayimul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdio.h>
 
-void	*ft_memcpy(void *dest, const void *src, size_t n)
+void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
-	char *x;
-	char *y;
+	size_t	i;
+	char	*dst1;
+	char	*src1;
 
-	if (n == 0 || dest == src)
-		return (dest);
-	x = (char *)dest;
-	y = (char *)src;
-	while (--n)
-		*x++ = *y++;
-	*x = *y;
-	return (dest);
+	i = 0;
+	dst1 = (char *)dst;
+	src1 = (char *)src;
+	while (i < n)
+	{
+		dst1[i] = src1[i];
+		i++;
+	}
+	return (dst);
 }
-
-//int		main()
-//{
-//	char src[35] = "lebza is coming to school again";
-//	char dest[18] = "hello world again";
-
-//	printf("%s", ft_memcpy(dest, src, 32));
-//	return (0);
-//}
 
