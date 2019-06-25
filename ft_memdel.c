@@ -6,7 +6,7 @@
 /*   By: enayimul <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/10 09:39:18 by enayimul          #+#    #+#             */
-/*   Updated: 2019/06/10 09:51:56 by enayimul         ###   ########.fr       */
+/*   Updated: 2019/06/21 08:56:50 by enayimul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,6 @@ void	ft_memdel(void **ap)
 	if (ap != NULL)
 	{
 		free(*ap);
-	*ap = NULL;
+		*ap = NULL;
 	}
 }

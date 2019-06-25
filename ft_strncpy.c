@@ -1,23 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strequ.c                                        :+:      :+:    :+:   */
+/*   ft_strncpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: enayimul <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/06/20 11:21:21 by enayimul          #+#    #+#             */
-/*   Updated: 2019/06/21 09:53:30 by enayimul         ###   ########.fr       */
+/*   Created: 2019/06/18 15:13:47 by enayimul          #+#    #+#             */
+/*   Updated: 2019/06/18 15:34:40 by enayimul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_strequ(char const *s1, char const *s2)
+char	*ft_strncpy(char *dst, const char *src, size_t len)
 {
-	if (s1 == NULL || s2 == NULL)
-		return (0);
-	if (ft_strcmp(s1, s2) != 0)
-		return (0);
-	else
-		return (1);
+	size_t	i;
+
+	i = 0;
+	while (src[i] && i < len)
+	{
+		dst[i] = src[i];
+		i++;
+	}
+	while (i < len)
+	{
+		dst[i] = '\0';
+		i++;
+	}
+	return (dst);
 }

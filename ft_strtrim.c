@@ -1,27 +1,42 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncmp.c                                       :+:      :+:    :+:   */
+/*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: enayimul <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/05/28 10:15:25 by enayimul          #+#    #+#             */
-/*   Updated: 2019/06/21 09:48:35 by enayimul         ###   ########.fr       */
+/*   Created: 2019/06/24 16:23:18 by enayimul          #+#    #+#             */
+/*   Updated: 2019/06/25 10:17:01 by enayimul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_strncmp(const char *s1, const char *s2, size_t n)
+char	*ft_strtrim(char const *s)
 {
-	size_t		i;
+	size_t	i;
+	size_t	j;
+	size_t	k;
+	char	*str;
 
 	i = 0;
-	if (n == 0)
-		return (0);
-	while (s1[i] != '\0' && s1[i] == s2[i] && i < n - 1)
-	{
+	k = 0;
+	if (!s)
+		return (NULL);
+	j = ft_strlen(s) - 1;
+	while (s[i] == ' ' || s[i] == '\t' || s[i] == '\n')
 		i++;
+	if (s[i] == '\0')
+		return ("");
+	while (s[j] == ' ' || s[j] == '\t' || s[j] == '\n')
+		j--;
+	j++;
+	if (!(str = (char *)malloc(sizeof(char) * (j - i + 1))))
+		return (NULL);
+	while (i < j)
+	{
+		str[k++] = s[i++];
 	}
-	return ((unsigned char)s1[i] - (unsigned char)s2[i]);
+	str[k] = '\0';
+	return (str);
 }
